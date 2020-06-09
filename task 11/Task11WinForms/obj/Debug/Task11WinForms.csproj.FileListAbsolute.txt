@@ -1,0 +1,10 @@
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\bin\Debug\Task11WinForms.exe.config
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\bin\Debug\Task11WinForms.exe
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\bin\Debug\Task11WinForms.pdb
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\obj\Debug\Task11WinForms.Form1.resources
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\obj\Debug\Task11WinForms.Properties.Resources.resources
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\obj\Debug\Task11WinForms.csproj.GenerateResource.cache
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\obj\Debug\Task11WinForms.csproj.CoreCompileInputs.cache
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\obj\Debug\Task11WinForms.exe
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\obj\Debug\Task11WinForms.pdb
+C:\Users\inact1ve\Desktop\Task11WinForms\Task11WinForms\obj\Debug\Task11WinForms.csprojAssemblyReference.cache

@@ -1,0 +1,9 @@
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\bin\Debug\Task5WinForm.exe.config
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\bin\Debug\Task5WinForm.exe
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\bin\Debug\Task5WinForm.pdb
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\obj\Debug\Task5WinForm.MainForm.resources
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\obj\Debug\Task5WinForm.Properties.Resources.resources
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\obj\Debug\Task5WinForm.csproj.GenerateResource.cache
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\obj\Debug\Task5WinForm.csproj.CoreCompileInputs.cache
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\obj\Debug\Task5WinForm.exe
+C:\Users\inact1ve\Desktop\Task5WinForm\Task5WinForm\obj\Debug\Task5WinForm.pdb

@@ -1,0 +1,7 @@
+C:\Учеба\Учебная практика\Уч. практика\task 9\task 9\bin\Debug\task 9.exe.config
+C:\Учеба\Учебная практика\Уч. практика\task 9\task 9\bin\Debug\task 9.exe
+C:\Учеба\Учебная практика\Уч. практика\task 9\task 9\bin\Debug\task 9.pdb
+C:\Учеба\Учебная практика\Уч. практика\task 9\task 9\obj\Debug\task 9.csproj.CoreCompileInputs.cache
+C:\Учеба\Учебная практика\Уч. практика\task 9\task 9\obj\Debug\task 9.exe
+C:\Учеба\Учебная практика\Уч. практика\task 9\task 9\obj\Debug\task 9.pdb
+C:\Учеба\Учебная практика\Уч. практика\task 9\task 9\obj\Debug\task 9.csprojAssemblyReference.cache
