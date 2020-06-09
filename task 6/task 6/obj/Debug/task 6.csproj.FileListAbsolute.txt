@@ -1,0 +1,6 @@
+C:\Учеба\Учебная практика\Уч. практика\task 6\task 6\bin\Debug\task 6.exe.config
+C:\Учеба\Учебная практика\Уч. практика\task 6\task 6\bin\Debug\task 6.exe
+C:\Учеба\Учебная практика\Уч. практика\task 6\task 6\bin\Debug\task 6.pdb
+C:\Учеба\Учебная практика\Уч. практика\task 6\task 6\obj\Debug\task 6.csproj.CoreCompileInputs.cache
+C:\Учеба\Учебная практика\Уч. практика\task 6\task 6\obj\Debug\task 6.exe
+C:\Учеба\Учебная практика\Уч. практика\task 6\task 6\obj\Debug\task 6.pdb
