@@ -1,0 +1,9 @@
+C:\Users\inact1ve\Desktop\task 3\task 3\bin\Debug\task 3.exe.config
+C:\Users\inact1ve\Desktop\task 3\task 3\bin\Debug\task 3.exe
+C:\Users\inact1ve\Desktop\task 3\task 3\bin\Debug\task 3.pdb
+C:\Users\inact1ve\Desktop\task 3\task 3\obj\Debug\task_3.Form1.resources
+C:\Users\inact1ve\Desktop\task 3\task 3\obj\Debug\task_3.Properties.Resources.resources
+C:\Users\inact1ve\Desktop\task 3\task 3\obj\Debug\task 3.csproj.GenerateResource.cache
+C:\Users\inact1ve\Desktop\task 3\task 3\obj\Debug\task 3.csproj.CoreCompileInputs.cache
+C:\Users\inact1ve\Desktop\task 3\task 3\obj\Debug\task 3.exe
+C:\Users\inact1ve\Desktop\task 3\task 3\obj\Debug\task 3.pdb
