@@ -1,0 +1,10 @@
+C:\Users\inact1ve\Desktop\task 7\task 7\bin\Debug\task 7.exe.config
+C:\Users\inact1ve\Desktop\task 7\task 7\bin\Debug\task 7.exe
+C:\Users\inact1ve\Desktop\task 7\task 7\bin\Debug\task 7.pdb
+C:\Users\inact1ve\Desktop\task 7\task 7\obj\Debug\task_7.Form1.resources
+C:\Users\inact1ve\Desktop\task 7\task 7\obj\Debug\task_7.Properties.Resources.resources
+C:\Users\inact1ve\Desktop\task 7\task 7\obj\Debug\task 7.csproj.GenerateResource.cache
+C:\Users\inact1ve\Desktop\task 7\task 7\obj\Debug\task 7.csproj.CoreCompileInputs.cache
+C:\Users\inact1ve\Desktop\task 7\task 7\obj\Debug\task 7.exe
+C:\Users\inact1ve\Desktop\task 7\task 7\obj\Debug\task 7.pdb
+C:\Users\inact1ve\Desktop\task 7\task 7\obj\Debug\task_7.Form2.resources
