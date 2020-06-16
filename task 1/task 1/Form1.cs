@@ -78,32 +78,41 @@ namespace task_1
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            bool ok = true;
             if (UserChoice.SelectedIndex == 1)
             {
-                x = Convert.ToInt32(InputUserNumber.Text);
+                ok = int.TryParse(InputUserNumber.Text, out x);              
             }
-            if (x < 4 || x > 10000)
+            if (ok == false)
             {
-                OutResult.Text = "0";
+                labelError.Text = "Некорректный ввод";
+                labelError.Visible = true;
             }
             else
             {
-                int count = 0;
-                List<int> res = new List<int>();
-                res = CreateSimpleMas(x);
-                int[] mas = new int[res.Count];
-                mas = res.ToArray();
-                for (int i = 0; i < mas.Length; i++)
+                if (x < 4 || x > 10000)
                 {
-                    for (int j = i; j < mas.Length; j++)
-                    {
-                        if (mas[i] + mas[j] == x) count++;
-                    }
+                    OutResult.Text = "0";
                 }
-                OutResult.Text = count.ToString();
-                result = count;
+                else
+                {
+                    int count = 0;
+                    List<int> res = new List<int>();
+                    res = CreateSimpleMas(x);
+                    int[] mas = new int[res.Count];
+                    mas = res.ToArray();
+                    for (int i = 0; i < mas.Length; i++)
+                    {
+                        for (int j = i; j < mas.Length; j++)
+                        {
+                            if (mas[i] + mas[j] == x) count++;
+                        }
+                    }
+                    OutResult.Text = count.ToString();
+                    result = count;
+                }
+                ButtonSaveFile.Enabled = true;
             }
-            ButtonSaveFile.Enabled = true;
         }
         private static bool isSimple(int n)
         {
@@ -134,6 +143,21 @@ namespace task_1
             {
                 File.WriteAllText(fbd.SelectedPath+ "\\output.txt", result.ToString());
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelError_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
