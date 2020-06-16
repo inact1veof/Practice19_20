@@ -113,44 +113,61 @@ namespace task_4
             }
             else
             {
+                bool prov = false;
+                double x1 = 0;
+                double x0 = 0;
                 bool ind = false;
                 double check = 0;
                 double eps = Convert.ToDouble(InputEps.Text);
                 double mid = 0;
-                double x1 = Convert.ToDouble(begLen.Text);
-                double x0 = Convert.ToDouble(endLen.Text);
-                double result = 0;
-                double Fresult = 10;
-                do
+                prov = double.TryParse(begLen.Text, out x1);
+                if (!prov)
                 {
-                    mid = (x1 + x0) / 2;
-                    if (Function(mid) * Function(x1) <= 0)
-                    {
-                        x0 = mid;
-                    }
-                    else
-                    {
-                        x1 = mid;
-                    }
-                    result = mid;
-                    Fresult = Function(mid);
-                    if (check == Fresult)
-                    {
-                        ind = true;
-                        break;
-                    }
-                    else
-                    {
-                        check = Fresult;
-                    }
-                } while (Math.Abs(Fresult) > eps);
-                if (ind)
-                {
-                    labelResult.Text = "В данной области нет корней";
+                    labelResult.Text = "Некорректно задано начало отрезка";
                 }
                 else
                 {
-                    labelResult.Text = result.ToString();
+                    prov = double.TryParse(endLen.Text, out x0);
+                    if (!prov)
+                    {
+                        labelResult.Text = "Некорректно задан конец отрезка";
+                    }
+                    else
+                    {
+                        double result = 0;
+                        double Fresult = 10;
+                        do
+                        {
+                            mid = (x1 + x0) / 2;
+                            if (Function(mid) * Function(x1) <= 0)
+                            {
+                                x0 = mid;
+                            }
+                            else
+                            {
+                                x1 = mid;
+                            }
+                            result = mid;
+                            Fresult = Function(mid);
+                            if (check == Fresult)
+                            {
+                                ind = true;
+                                break;
+                            }
+                            else
+                            {
+                                check = Fresult;
+                            }
+                        } while (Math.Abs(Fresult) > eps);
+                        if (ind)
+                        {
+                            labelResult.Text = "В данной области нет корней";
+                        }
+                        else
+                        {
+                            labelResult.Text = result.ToString();
+                        }
+                    }
                 }
             }
         }

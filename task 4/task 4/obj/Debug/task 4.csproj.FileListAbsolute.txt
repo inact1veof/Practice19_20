@@ -16,3 +16,4 @@ C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 
 C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 4.csproj.CoreCompileInputs.cache
 C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 4.exe
 C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 4.pdb
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 4.csprojAssemblyReference.cache
