@@ -78,19 +78,25 @@ namespace task_2
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            bool ok = true;
             ButtonInputFile.Enabled = true;
             if (UserChoice.SelectedIndex == 1)
             {
-                n = Convert.ToInt32(InputUserNumber.Text);
-                if (n != 0)
-                {
-                    result = SearchItem(n);
-                    OutResult.Text = result.ToString();
-                    ButtonSaveFile.Enabled = true;
-                }
+                ok = int.TryParse(InputUserNumber.Text, out n);
+                if (ok == false) labelError.Visible = true;
                 else
                 {
-                    labelError.Visible = true;
+                    labelError.Visible = false;
+                    if (n != 0)
+                    {
+                        result = SearchItem(n);
+                        OutResult.Text = result.ToString();
+                        ButtonSaveFile.Enabled = true;
+                    }
+                    else
+                    {
+                        labelError.Visible = true;
+                    }
                 }
             }
             else

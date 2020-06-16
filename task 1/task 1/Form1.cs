@@ -90,6 +90,7 @@ namespace task_1
             }
             else
             {
+                labelError.Visible = false;
                 if (x < 4 || x > 10000)
                 {
                     OutResult.Text = "0";
