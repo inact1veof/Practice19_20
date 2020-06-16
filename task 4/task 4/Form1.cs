@@ -107,27 +107,52 @@ namespace task_4
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            double eps = Convert.ToDouble(InputEps.Text);
-            double mid = 0;
-            double x1 = Convert.ToDouble(begLen.Text);
-            double x0 = Convert.ToDouble(endLen.Text);
-            double result = 0;
-            double Fresult = 10;
-            do
+            if (Convert.ToDouble(InputEps.Text) > 1 || Convert.ToDouble(InputEps.Text) < 0)
             {
-                mid = (x1 + x0) / 2;
-                if (Function(mid) * Function(x1) <= 0)
+                labelResult.Text = "Некорректно задана точность";
+            }
+            else
+            {
+                bool ind = false;
+                double check = 0;
+                double eps = Convert.ToDouble(InputEps.Text);
+                double mid = 0;
+                double x1 = Convert.ToDouble(begLen.Text);
+                double x0 = Convert.ToDouble(endLen.Text);
+                double result = 0;
+                double Fresult = 10;
+                do
                 {
-                    x0 = mid;
+                    mid = (x1 + x0) / 2;
+                    if (Function(mid) * Function(x1) <= 0)
+                    {
+                        x0 = mid;
+                    }
+                    else
+                    {
+                        x1 = mid;
+                    }
+                    result = mid;
+                    Fresult = Function(mid);
+                    if (check == Fresult)
+                    {
+                        ind = true;
+                        break;
+                    }
+                    else
+                    {
+                        check = Fresult;
+                    }
+                } while (Math.Abs(Fresult) > eps);
+                if (ind)
+                {
+                    labelResult.Text = "В данной области нет корней";
                 }
                 else
                 {
-                    x1 = mid;
+                    labelResult.Text = result.ToString();
                 }
-                result = mid;
-                Fresult = Function(mid);
-            } while (Math.Abs(Fresult) > eps);
-            labelResult.Text = result.ToString();
+            }
         }
         static double Function(double x)
         {

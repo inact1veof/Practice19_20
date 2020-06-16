@@ -7,3 +7,12 @@ C:\Users\inact1ve\Desktop\task 4\task 4\obj\Debug\task 4.csproj.GenerateResource
 C:\Users\inact1ve\Desktop\task 4\task 4\obj\Debug\task 4.csproj.CoreCompileInputs.cache
 C:\Users\inact1ve\Desktop\task 4\task 4\obj\Debug\task 4.exe
 C:\Users\inact1ve\Desktop\task 4\task 4\obj\Debug\task 4.pdb
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\bin\Debug\task 4.exe.config
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\bin\Debug\task 4.exe
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\bin\Debug\task 4.pdb
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task_4.Form1.resources
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task_4.Properties.Resources.resources
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 4.csproj.GenerateResource.cache
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 4.csproj.CoreCompileInputs.cache
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 4.exe
+C:\Users\inact1ve\Desktop\FinalTasks\Practice19_20\task 4\task 4\obj\Debug\task 4.pdb
