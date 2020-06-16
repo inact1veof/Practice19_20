@@ -11,6 +11,8 @@ namespace task_6
 {
     class Program
     {
+        delegate void PoslHandler(string message);
+        static event PoslHandler Notify;
         public static double[] PoslOne = null;
         public static double[] PoslTwo = null;
         public static double a1 = 0;
@@ -22,6 +24,9 @@ namespace task_6
         public static int count = 0;
         public static bool check = false;
         public static int chet = 0;
+        static Thread first;
+        static Thread second;
+        public delegate void ThreadStart();
         static double InputNumberDouble()
         {
             double result = 0;
@@ -54,6 +59,10 @@ namespace task_6
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Данная программа работает с последовательностями");
+            Console.WriteLine("Исходные данные: a1,a2,a3, N, L, M");
+            Console.WriteLine("1. Программа строит последовательность до номера N");
+            Console.WriteLine("2. Программа находит M элементов с номера L+1");
+            Console.WriteLine("Действие, которое выполнится быстрее, будет выведено");
             Console.ResetColor();
             Console.Write("Введите a1: ");
             a1 = InputNumberDouble();
@@ -61,7 +70,7 @@ namespace task_6
             Console.Write("Введите a2: ");
             a2 = InputNumberDouble();
             Console.WriteLine();
-            Console.Write("Введите a2: ");
+            Console.Write("Введите a3: ");
             a3 = InputNumberDouble();
             Console.WriteLine();
             Console.Write("Введите N: ");
@@ -73,8 +82,18 @@ namespace task_6
             Console.Write("Введите M: ");
             m = InputNumberInt();
             Console.WriteLine();
-            MakePoslAsync(n);
-            MakePoslAfterL(l, m);
+            Notify += DisplayMessage;
+            first = new Thread(delegate ()
+            {
+                MakePoslToN(n);
+            });
+            first.Start();
+            second = new Thread(delegate ()
+            {
+                MakePoslAfterL(l, m);
+            });
+            second.Start();
+            first.Abort();
             Console.ReadLine();
         }
         static double MakePosl(int n)
@@ -102,38 +121,37 @@ namespace task_6
             else return 10;
 
         }
-        static async void MakePoslAfterL(int l, int m)
+        static void MakePoslAfterL(int l, int m)
         {
             PoslTwo = new double[l+m];
             for (int i = l-1; i < l+m; i++)
             {
-                PoslTwo[i] = await Task.Run(() => MakePosl(i + 1));
+                PoslTwo[i] = MakePosl(i + 1);
             }
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Программа остановлена, составлена последовательность l..l+m");
+            Notify?.Invoke("Программа остановлена, составлена последовательность l+1...l+m");
             Console.ResetColor();
-            for (int i = l-1; i < l + m; i++)
+            for (int i = l; i < l + m; i++)
             {
                 Console.Write(PoslTwo[i] + " ");
             }
             double sum = 0;
-            for (int i = l - 1; i < l + m; i++)
+            for (int i = l; i < l + m; i++)
             {
                 sum += PoslTwo[i];
             }
             Console.WriteLine();
             Console.WriteLine("Сумма элементов последовательности = {0} (доп.функция)", sum);
-            Console.ReadKey();
         }
-        static async void MakePoslAsync(int n)
-        {
+        public static void MakePoslToN(int n)
+        {            
             PoslOne = new double[n];
             for (int i = 0; i < n; i++)
             {
-                PoslOne[i] = await Task.Run(() => MakePosl(i+1));
+                PoslOne[i] = MakePosl(i+1);
             }
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Программа остановлена, составлена последовательность 1..n");
+            Notify?.Invoke("Программа остановлена, составлена последовательность 1...n");
             Console.ResetColor();
             for (int i = 0; i < n; i++)
             {
@@ -146,6 +164,11 @@ namespace task_6
             }
             Console.WriteLine();
             Console.WriteLine("Сумма элементов последовательности = {0} (доп.функция)", sum);
+            second.Abort();
+        } 
+        static void DisplayMessage(string msg)
+        {
+            Console.WriteLine(msg);
         }
     }
 }
